@@ -43,4 +43,27 @@ export const ClockWrapper = styled.div`
       border: none;
     }
   }
+
+  @media (max-width: 768px) {
+    .timeBox {
+      .displayBox {
+        .timerValue {
+          font-size: 55px;
+        }
+      }
+    }
+  }
+  @media (max-width: 428px) {
+    .timeBox {
+      .displayBox {
+        .timerValue {
+          font-size: 35px;
+          line-height: 60px; /* 100% */
+        }
+        .timerLabel {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 `;

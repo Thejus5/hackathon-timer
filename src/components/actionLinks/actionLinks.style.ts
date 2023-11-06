@@ -5,6 +5,10 @@ export const LinkWrapper = styled.div`
   justify-content: center;
   padding-top: 30px;
   height: 50px;
+  @media (max-width: 1232px) {
+    padding: 0 20px;
+    padding-top: 30px;
+  }
 `;
 
 export const LinkBox = styled.div`
@@ -53,5 +57,9 @@ export const LinkBox = styled.div`
       margin-top: 25px;
       opacity: 1;
     }
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 `;
