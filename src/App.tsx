@@ -1,9 +1,10 @@
-import { useState } from "react";
+import CountDownPage from "./CountDownPage/countDown";
 
 function App() {
-  const [count, setCount] = useState(0);
 
-  return <div>Hello</div>;
+  return (
+    <CountDownPage/>
+  )
 }
 
 export default App;
