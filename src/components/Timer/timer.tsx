@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { AppTexts } from "../../Core/text";
 import { ClockWrapper } from "./timer.style";
 import useTimerEngine from "./timerEngine";
