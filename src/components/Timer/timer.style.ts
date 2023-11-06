@@ -30,6 +30,7 @@ export const ClockWrapper = styled.div`
         font-weight: 700;
         line-height: 77px; /* 100% */
         letter-spacing: -3px;
+        text-align: center;
       }
       .timerLabel {
         font-size: 16px;
