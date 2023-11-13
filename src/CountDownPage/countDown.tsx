@@ -4,12 +4,13 @@ import BackgroundAnimation from "../components/backgroundAnimation/backgroundAni
 import Button from "../components/button/button";
 import Description from "../components/gameDescription/gameDescription";
 import GameTitle from "../components/gameTitle/gameTitle";
+import NavBar from "../components/navBar/navBar";
 import { TimerWrapper } from "./countDown.style";
 
 function CountDownPage() {
   return (
     <BackgroundAnimation>
-      <Button label="Subscribe" variant="primary"/>
+      <NavBar/>
       {/* <TimerWrapper>
         <GameTitle />
         <Description />

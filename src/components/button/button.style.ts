@@ -7,6 +7,7 @@ interface WrapperProps {
 export const ButtonWrapper = styled.div<WrapperProps>`
   position: relative;
   width: fit-content;
+  height: 52px;
 
   cursor: pointer;
   p {
