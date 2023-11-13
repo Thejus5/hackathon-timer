@@ -4,6 +4,7 @@ export const NavWrapper = styled.nav`
   position: fixed;
   width: 100%;
   padding: 24px 24px;
+  background: #0000007d;
 
   .centeredDiv {
     display: flex;
@@ -52,7 +53,7 @@ export const NavWrapper = styled.nav`
     border-bottom: 1px solid transparent;
     cursor: pointer;
   }
-  .linkText:hover{
+  .linkText:hover {
     border-bottom: 1px solid #fff;
   }
 `;
