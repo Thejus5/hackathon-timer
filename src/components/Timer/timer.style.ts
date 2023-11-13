@@ -1,69 +1,44 @@
 import styled from "styled-components";
 
 export const ClockWrapper = styled.div`
-  position: relative;
+  display: flex;
   width: 100%;
-  margin-top: 45px;
-  /* border: 1px solid #fff; */
-  padding-top: 20.6%; // Aspect ratio [w:h] 692.5:143 (calculated as h*100 / w)
+  margin-top: 32px;
   .timeBox {
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    height: 100%;
     width: 100%;
-    /* background-color: #ff0000; */
-
-    .displayBox {
-      border-right: 1px solid #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex-grow: 1;
-      height: 100%;
-
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .displayBox {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    margin-left: 24px;
+    .timerText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
       .timerValue {
-        width: 93px;
-        font-size: 77px;
-        font-weight: 700;
-        line-height: 77px; /* 100% */
-        letter-spacing: -3px;
-        text-align: center;
+        font-family: Zen Dots;
+        font-size: 68px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
       }
       .timerLabel {
-        font-size: 16px;
+        font-family: Zen Dots;
+        font-size: 20px;
+        font-style: normal;
         font-weight: 400;
-        line-height: 16px; /* 100% */
-        text-transform: lowercase;
-      }
-    }
-    .seconds {
-      border: none;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .timeBox {
-      .displayBox {
-        .timerValue {
-          font-size: 55px;
-        }
+        line-height: normal;
+        text-transform: uppercase;
       }
     }
   }
-  @media (max-width: 428px) {
-    .timeBox {
-      .displayBox {
-        .timerValue {
-          font-size: 35px;
-          line-height: 60px; /* 100% */
-        }
-        .timerLabel {
-          font-size: 12px;
-        }
-      }
-    }
+  .displayBox:first-child{
+    margin-left: 0;
   }
 `;
