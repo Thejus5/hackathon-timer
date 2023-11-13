@@ -32,7 +32,10 @@ export const SamuraiWrapper = styled.section`
     position: absolute;
     top: 60%;
     left: 50%;
+    width: auto;
+    max-width: 100%;
     transform: translate(-50%, -50%);
+    /* background-color: #fff; */
   }
   .smokeImage {
     width: 100%;
